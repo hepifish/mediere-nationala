@@ -21,6 +21,7 @@ export const metadata: Metadata = {
 
 const services = [
   {
+    id: "medierea-comerciala",
     icon: Briefcase,
     title: "Medierea comercială",
     subtitle: "Arhitectura soluțiilor de business",
@@ -28,6 +29,7 @@ const services = [
       "Disputele comerciale necesită management strategic. În loc să lăsăm deciziile pe seama procedurilor judiciare, redăm controlul partenerilor de afaceri. Intervenția se concentrează pe protejarea activelor valoroase — reputație, timp și relații de piață — oferind un cadru de negociere în care pragmatismul economic prevalează. Construim acorduri care nu doar rezolvă conflictul, ci securizează colaborarea viitoare.",
   },
   {
+    id: "medierea-civila",
     icon: MessageCircle,
     title: "Medierea civilă",
     subtitle: "Spațiu pentru dialog constructiv",
@@ -35,6 +37,7 @@ const services = [
       "Dincolo de specificul disputei, medierea civilă vizează restabilirea respectului și înțelegerii între oameni. Abordarea noastră caută să deschidă canale de comunicare care au fost blocate, oferind un cadru sigur pentru soluții creative și oneste. Transformăm tensiunea în acorduri naturale care aduc pace și predictibilitate în viața de zi cu zi.",
   },
   {
+    id: "medierea-de-familie",
     icon: Heart,
     title: "Medierea de familie",
     subtitle: "Protejarea echilibrului și a viitorului",
@@ -42,6 +45,7 @@ const services = [
       "Familia reprezintă un sistem complex care are nevoie de protecție în timpul transformării structurale. Abordarea noastră nu urmărește doar găsirea compromisului, ci creează un spațiu sigur dedicat protejării celor mai importante relații. Dialogul respectă emoțiile, iar deciziile iau în considerare stabilitatea, construind acorduri care onorează interesele tuturor membrilor familiei.",
   },
   {
+    id: "medierea-penala",
     icon: Gavel,
     title: "Medierea penală",
     subtitle: "Justiție restaurativă și responsabilitate",
@@ -49,6 +53,7 @@ const services = [
       "Medierea penală reprezintă o formă avansată de rezolvare a conflictelor care mută accentul de la pedepsirea trecutului spre repararea viitorului. Credem că dialogul poate restabili echilibrul social prin cadre protejate unde responsabilitatea este directă. Medierea penală facilitează rezolvarea umană și eficientă, permițând comunităților să se vindece.",
   },
   {
+    id: "dialog-social",
     icon: Users,
     title: "Dialog social și coeziune",
     subtitle: "Punți între comunități",
@@ -56,6 +61,7 @@ const services = [
       "Abordăm tensiunile la nivelul grupurilor și comunităților. Creăm cadre în care interesele divergente se întâlnesc pentru a genera soluții de coexistență, funcționând ca un catalizator pentru dialogul social, transformând barierele dintre cetățeni, organizații și instituții în parteneriate funcționale.",
   },
   {
+    id: "consultanta-formare",
     icon: GraduationCap,
     title: "Consultanță, formare și dezvoltare profesională",
     subtitle: "Excelență în practica medierii",
@@ -91,7 +97,8 @@ export default function ServiciiPage() {
           {services.map((service, i) => (
             <FadeIn key={service.title} delay={0.05}>
               <div
-                className={`grid grid-cols-1 lg:grid-cols-12 gap-8 items-start p-8 lg:p-10 rounded-lg border border-border hover:border-accent/20 transition-colors ${
+                id={service.id}
+                className={`scroll-mt-24 grid grid-cols-1 lg:grid-cols-12 gap-8 items-start p-8 lg:p-10 rounded-lg border border-border hover:border-accent/20 transition-colors ${
                   i % 2 === 0 ? "" : "bg-warm/30"
                 }`}
               >

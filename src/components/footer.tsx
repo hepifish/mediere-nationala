@@ -48,19 +48,19 @@ export function Footer() {
             </h3>
             <ul className="space-y-3">
               {[
-                "Medierea comercială",
-                "Medierea civilă",
-                "Medierea de familie",
-                "Medierea penală",
-                "Dialog social",
-                "Consultanță și formare",
+                { label: "Medierea comercială", anchor: "medierea-comerciala" },
+                { label: "Medierea civilă", anchor: "medierea-civila" },
+                { label: "Medierea de familie", anchor: "medierea-de-familie" },
+                { label: "Medierea penală", anchor: "medierea-penala" },
+                { label: "Dialog social", anchor: "dialog-social" },
+                { label: "Consultanță și formare", anchor: "consultanta-formare" },
               ].map((service) => (
-                <li key={service}>
+                <li key={service.anchor}>
                   <Link
-                    href="/servicii"
+                    href={`/servicii#${service.anchor}`}
                     className="text-sm text-white/70 hover:text-white transition-colors"
                   >
-                    {service}
+                    {service.label}
                   </Link>
                 </li>
               ))}

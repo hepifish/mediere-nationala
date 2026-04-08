@@ -17,17 +17,11 @@ export default async function OGImage() {
           flexDirection: "column",
           justifyContent: "space-between",
           padding: "80px",
-          fontFamily: "serif",
         }}
       >
-        {/* Top — logo mark (the bridge arcs) */}
-        <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
-          <svg
-            width="120"
-            height="40"
-            viewBox="0 0 170 57"
-            fill="none"
-          >
+        {/* Top — logo arcs */}
+        <div style={{ display: "flex" }}>
+          <svg width="120" height="40" viewBox="0 0 170 57">
             <path
               d="M169.5 56.5004H151.5C143.1 20.5008 102.333 8.50056 83 7.00042C143 6.20042 165.667 39.6671 169.5 56.5004Z"
               fill="rgba(255,255,255,0.7)"
@@ -44,29 +38,46 @@ export default async function OGImage() {
         </div>
 
         {/* Center — main text */}
-        <div style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
+        <div style={{ display: "flex", flexDirection: "column" }}>
           <div
             style={{
-              fontSize: "28px",
+              fontSize: 28,
               color: "#A08B6E",
-              letterSpacing: "4px",
-              textTransform: "uppercase",
+              letterSpacing: 4,
+              textTransform: "uppercase" as const,
+              marginBottom: 24,
             }}
           >
             Centrul Național de Mediere
           </div>
           <div
             style={{
-              fontSize: "64px",
-              fontWeight: 700,
-              color: "white",
-              lineHeight: 1.1,
-              letterSpacing: "-2px",
+              display: "flex",
+              flexDirection: "column",
             }}
           >
-            Transformăm conflictul
-            <br />
-            <span style={{ color: "#A08B6E" }}>în soluție</span>
+            <span
+              style={{
+                fontSize: 64,
+                fontWeight: 700,
+                color: "white",
+                lineHeight: 1.1,
+                letterSpacing: -2,
+              }}
+            >
+              Transformăm conflictul
+            </span>
+            <span
+              style={{
+                fontSize: 64,
+                fontWeight: 700,
+                color: "#A08B6E",
+                lineHeight: 1.1,
+                letterSpacing: -2,
+              }}
+            >
+              în soluție
+            </span>
           </div>
         </div>
 
@@ -80,16 +91,16 @@ export default async function OGImage() {
         >
           <div
             style={{
-              fontSize: "18px",
+              fontSize: 18,
               color: "rgba(255,255,255,0.5)",
-              fontStyle: "italic",
+              fontStyle: "italic" as const,
             }}
           >
             Dialogul, garanția soluțiilor durabile.
           </div>
           <div
             style={{
-              fontSize: "16px",
+              fontSize: 16,
               color: "rgba(255,255,255,0.3)",
             }}
           >
