@@ -16,6 +16,10 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
+  robots: {
+    index: false,
+    follow: false,
+  },
   metadataBase: new URL(
     process.env.VERCEL_PROJECT_PRODUCTION_URL
       ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
