@@ -16,7 +16,11 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://mediere-nationala.com"),
+  metadataBase: new URL(
+    process.env.VERCEL_PROJECT_PRODUCTION_URL
+      ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+      : "https://mediere-nationala.vercel.app"
+  ),
   title: {
     default: "Centrul Național de Mediere și Conflict Management",
     template: "%s | Centrul Național de Mediere",
