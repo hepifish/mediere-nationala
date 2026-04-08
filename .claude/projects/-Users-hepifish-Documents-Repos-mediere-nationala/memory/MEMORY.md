@@ -1,0 +1,1 @@
+- [Project Context](project_context.md) — Cold outreach redesign of mediere-nationala.com to win web app contract, deadline today
