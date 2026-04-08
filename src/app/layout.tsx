@@ -16,6 +16,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://mediere-nationala.com"),
   title: {
     default: "Centrul Național de Mediere și Conflict Management",
     template: "%s | Centrul Național de Mediere",
