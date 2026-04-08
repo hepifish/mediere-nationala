@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { MapPin, Phone, Mail } from "lucide-react";
-import { LogoIcon } from "@/components/logo";
+import { LogoFull } from "@/components/logo";
 
 export function Footer() {
   return (
@@ -9,17 +9,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <div className="flex items-center gap-3 mb-4">
-              <LogoIcon size={36} />
-              <div>
-                <p className="text-sm font-semibold leading-tight">
-                  Centrul Național de Mediere
-                </p>
-                <p className="text-xs text-white/60 leading-tight">
-                  și Conflict Management
-                </p>
-              </div>
-            </div>
+            <LogoFull light showTagline className="mb-4" />
             <p className="text-sm text-white/70 leading-relaxed mt-4">
               Transformăm conflictele în soluții prin tehnici inovatoare de mediere,
               oferind un nou standard de profesionalism.

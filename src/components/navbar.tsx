@@ -26,7 +26,7 @@ export function Navbar() {
         <div className="flex h-20 items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 shrink-0">
-            <LogoIcon size={36} />
+            <LogoIcon size={20} />
             <div className="hidden sm:block">
               <p className="text-sm font-semibold text-navy leading-tight">
                 Centrul Național de Mediere
@@ -58,7 +58,7 @@ export function Navbar() {
           <div className="flex items-center gap-4">
             <Link
               href="/contact"
-              className="hidden md:inline-flex items-center px-5 py-2.5 bg-navy text-white text-sm font-medium rounded-md hover:bg-navy-light transition-colors"
+              className="hidden md:inline-flex items-center px-5 py-2.5 bg-navy text-white text-sm font-medium rounded-md hover:bg-navy-light active:scale-[0.98] transition-all"
             >
               Contactează-ne
             </Link>
